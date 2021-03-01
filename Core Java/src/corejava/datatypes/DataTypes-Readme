@@ -1,0 +1,30 @@
+Data Types
+
+	- Data types specify the different sizes and values that can be stored in the variable.
+	- There are two types
+	
+		1. Primitive Data Types
+		2. Non-Primitive Data Types
+		
+	1. Primitive Data Types
+		
+		- Java is a statically-typed programming language. It means, all variables must be declared before its use.
+		-  That is why we need to declare variable's type and name.
+		- There are 8 types of primitive data types:
+				
+				
+				Data Type					Size					Default Value
+				
+			boolean data type				1 bit					False
+			byte data type					2 byte					'\u0000'
+			char data type					1 byte					0
+			short data type					2 byte					0
+			int data type					4 byte					0
+			long data type					8 byte					0L
+			float data type					4 byte					0.0f
+			double data type				8 byte					0.0d
+			
+	2. Non-Primitive Data Types
+	
+		String 
+		Array
