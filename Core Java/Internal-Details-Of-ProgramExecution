@@ -1,0 +1,42 @@
+1. At compile time, java file is compiled by Java Compiler (It does not interact with OS) and converts the java code into bytecode.
+	simple.java ->file gets Converted to --> simple.java
+	
+2. At runtime, following steps are performed:
+
+	- Class file --> Class loader --> Bytecode verified --> Interpreter --> Runtime 
+	
+	-> Class file is given to Class Loader
+	
+		Class Loader :- is the subsystem of JVM that is used to load class files.
+	
+	--> Bytecode Verifier: checks the code fragments for illegal code that can violate access right to objects.
+	
+	--> Interpreter: read bytecode stream then execute the instructions.
+	
+_____________________________________________________________________________________________________________________________________
+
+
+QA
+
+	1. Can you save a java source file by other name than the class name?
+	
+		Yes, While compiling you have to give filename ,and while executing class name
+		
+		e.g. save following class as Hard.java
+		
+		
+			class Simple{
+			
+			public static void main(String [] args){
+				Syste.out.println("Hello");
+			}
+			}
+			
+			
+			To compile:	javac Hard.java
+			To execute:	java Simple
+			
+		---------------------------------------------------------------
+		
+		2. Can you have multiple classes in a java source file?
+			Yes. 
