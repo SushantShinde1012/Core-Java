@@ -8,4 +8,33 @@ ___________________________
 
  - Execution STarting point
  - A method or function return something or nothing for that we need return type
- - 
+ 
+ ** How Java Works :
+ 
+ 	--> Source File 
+ 			-> Compiled by Compiler
+ 				-> Byte code
+ 					-> Give Byte to JVM (Java Virtual Machine)
+ 					  -> Object gets created
+ 					  
+ 					  
+ ** Variables :
+ 
+ 	-> You can change your data
+ 	-> Variable is a container
+ 	-> Types of Variable 
+ 	
+ 		1. Primitive Data Types
+ 		
+ 			- Char
+ 			- byte
+ 			- short
+ 			- int
+ 			- float
+ 			- long
+ 			- double
+ 			- boolean
+ 			
+ 		2. Non-Primitive
+ 		
+ 			- 
