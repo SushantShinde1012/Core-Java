@@ -1,4 +1,11 @@
 --> Setting Up
 --------------------------------------------------------------------
 1. IDE - Integrated Devlopement Environment(Eclipse)
-2. 
+2. JDK
+
+main method in java :
+___________________________
+
+ - Execution STarting point
+ - A method or function return something or nothing for that we need return type
+ - 
