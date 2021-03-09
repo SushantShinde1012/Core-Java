@@ -133,6 +133,24 @@ package com.core;
  * 
  * 
  * 				b. do-- while()
+ * 
+ * 					- difference between while and do--while
+ * 		
+ * 					- In Case of while loop body may be a chance to execute zero times
+ * 
+ * 					- If we want to execute loop body at least one time then go for do--while
+ * 
+ * 					- syntax
+ * 				
+ * 							do{
+ * 								action; // executed at once
+ * 
+ * 							} while(condition);
+ * 
+ * 					- semicolon is mandatory
+ * 
+ * 					- curly braces are optional, without curly braces only one statement is allowed (except declarative statement)
+ * 
  * 				c. for loop
  * 
  * 					- If you know number of iteration in advance go for for loop
@@ -299,6 +317,27 @@ public class FlowControl {
 			System.out.println("Hello");
 		}
 		System.out.println("hi");
+		
+		
+		//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+		
+		
+		// do---while
+		
+		//Case 1 : Valid
+		do
+			System.out.println("Hello");
+		while(true);
+		
+		// Case 2: Invalid
+		/*
+		do
+			int x=10;
+		while(true);
+		*/ 
+		
+		
+		
 		
 		
 		
