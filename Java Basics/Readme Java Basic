@@ -38,3 +38,7 @@ ___________________________
  		2. Non-Primitive
  		
  			- 
+ 			
+ ==> Java is type safe
+ 
+ 	 means you have to declare a variable before using it.
