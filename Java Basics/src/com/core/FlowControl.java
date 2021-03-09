@@ -106,9 +106,37 @@ package com.core;
  * 				
  * 		2. Iterative Statements
  * 			- Group of statement is executed iteratively
+ * 
  * 				a. while loop
+ * 
+ * 					- If we don't know number of iterations in advance then go for while loop
+ * 					
+ * 					- while iterating over result set we always go for while loop
+ * 					
+ * 					- Syntax
+ * 							while(b){
+ * 										Action;
+ * 							}
+ * 					- The argument to while should be boolean type, if any other type then we will get compile time error.
+ * 
+ * 					- while(1){
+ * 							sysout("Hello");
+ * 						}
+ * 
+ * 					- Gives error as incompatible type found int required boolean
+ * 
+ * 					- curly braces are optional , without curly braces we can write only one statement(except declarative statement)
+ * 
+ * 					- while(true); // It is valid statement
+ * 
+ * 					- Note : 
+ * 
+ * 
  * 				b. do-- while()
  * 				c. for loop
+ * 
+ * 					- If you know number of iteration in advance go for for loop
+ * 
  * 				d. for each loop
  * 		
  * 		3. Control Transfer statement
@@ -229,6 +257,51 @@ public class FlowControl {
 			break;
 			
 		}
+		
+		//------------------------------------------------------------------------------------------------------------------
+		
+		// While
+		
+		
+		
+	/*	Case 1 : Invalid
+	 * 			bcoz condition is true , loop  keeps on executing so ouside statement is unreachable, so it is invalid
+	 * 
+	 * 
+		while(true) {
+			System.out.println("hello");
+		}
+		System.out.println("Hi");
+		
+	*/
+	
+	/*Case 2:
+	 * 		condition is false so code inside loop is      unreachable so error
+	 * 
+		while(false) {
+			System.out.println("hello");
+		}
+		System.out.println("Hi");
+		
+	*/
+		
+		/* 
+		 * m and n are normal variables(for normal variable value is considered at runtime only) , so there values are going to change , so it executes fine. if we add final to variables it also gives error. because every final variable is replaced by its value at compile time only
+		 * */
+		int m=10, n=20;
+		while(m<n) {
+			System.out.println("Hello");//goes infinite hello
+		}
+		System.out.println("Hi");
+		
+		
+		while(m>n) {
+			System.out.println("Hello");
+		}
+		System.out.println("hi");
+		
+		
+		
 		
 	}
 
