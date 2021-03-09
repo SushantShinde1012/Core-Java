@@ -19,8 +19,10 @@ package com.core;
  * 						}
  * 
  * 					- argument to if statement must be boolean type, if we are trying to provide any other type then we will get compile time error.
- * 
- * 
+ * 					- else is optional
+ * 					- curly braces also optional ; but we can write only one statement (No declarative statement is allowed)
+ * 					- note : semicolon is valid java statement which is also known as empty statement
+ * 				
  * 				b. switch()
  * 
  * 		2. Iterative Statements
@@ -71,7 +73,14 @@ public class FlowControl {
 			System.out.println("Hi");
 		}
 		
-		
+		if(true);// valid - it is called empty 
+	
+	/* Invalid
+		 * 	becoz without curly braces only one statement is allowed but that's must not declarative statement
+		 
+		if(true)
+			int x=10;
+	*/
 	}
 
 }
