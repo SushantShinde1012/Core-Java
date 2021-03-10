@@ -154,6 +154,134 @@ package com.core;
  * 				c. for loop
  * 
  * 					- If you know number of iteration in advance go for for loop
+ * 					
+ * 					- Most commonly used loop
+ * 
+ * 					- first initialization is executed
+ * 
+ * 					- syntax
+ * 
+ * 							for(initialization;condition;incr/decr){
+ * 									loop body;
+ * 							}
+ * 
+ * 					- then condition section
+ * 					- after that loop body
+ * 					- then increment / decrement
+ * 
+ * 					- curly braces are optional; we can add only one statement without curly braces (except declarative statement)
+ * 
+ * 					- valid condition
+ * 						
+ * 						1. for(int i=0;true;i++)
+ * 								sysout("Hello");
+ * 
+ * 						2. for(int i=0;i<10;i++);
+ * 
+ * 					- Invalid
+ * 				
+ * 						1. for(int i=0;i<10;i++)
+ * 								int p=10;
+ * 
+ * 					-> Initialization section
+ * 
+ * 						- executed only once in lifecycle of for
+ * 	
+ * 						- we can declare multiple variables at initialization sectio
+ * 
+ * 						- e.g for(int i=0,j=0;i<10;i++);
+ * 
+ * 						- in initialization section we can declare any number of variables but of same type 
+ * 		
+ * 						- e.g.(int i=0 , String s="sush";i<10;i++); // it will give error
+ * 
+ * 						- In initializaton section we can take any valid java statement
+ * 
+ * 						- for (sysout("Hello");i<10;i++){
+ * 
+ * 										sysout("Hi");
+ * 							}
+ * 
+ * 					-> Condition Section
+ * 
+ * 						- You can take any valid java expression but it should be boolean type
+ * 
+ * 						- this part is optional; if we do not put any condition compiler by default consider it as true and loop goes on infinite
+ * 
+ * 						- e.g. for(int i=o;;i++){
+ * 								System.out.println("hello");
+ * 							}
+ * 
+ * 					-> Increment / Decrement section
+ * 
+ * 						- Any valid java statement can be here in section
+ * 	
+ * 						- 
+ * 
+ * 						- int i=0;
+ * 
+ * 							for(Sysout("Hello");i<3;Sysout("Hi")){
+ * 								i++;
+ * 							}
+ * 
+ * 					-> Each section we can take independent statement
+ * 
+ * 					-> all three sections are optional; it will be infinite loop
+ * 
+ * 						for(;;){
+ * 							sysout("Hello"); 
+ * 						}
+ * 
+ * 					-> for(;;); // This is  also valid , it will be infinite
+ * 
+ * 					-> Unreachability
+ * 
+ * 					1. Invalid becoz loops goes infinite; and statement after for remains unreachable
+ * 						for(int i=0;true;i++){
+ * 
+ * 							sysout("Hello");
+ * 						}
+ * 						System.out.println("Hi");
+ * 
+ * 					2. Invalid bcoz loop body will be unreachable so compile time error
+ * 						for(int i=0;false;i++){
+ * 
+ * 							sysout("Hello");
+ * 						}
+ * 						System.out.println("Hi");
+ * 						
+ * 					3. Invalid , Condition by default is true so statement after for becomes unreachable and loop goes infinite
+ * 						for(int i=0;;i++){
+ * 
+ * 							sysout("Hello");
+ * 						}
+ * 						System.out.println("Hi");
+ * 
+ * 					4. Valid ; for normal variable value takes place at run time
+ * 						int a=10, b=20;
+ * 						for(int i=0;a<b;i++){
+ * 
+ * 							sysout("Hello");
+ * 						}
+ * 						System.out.println("Hi");
+ * 
+ * 					5.valid
+ * 						int a=10, b=20;
+ * 						for(int i=0;a>b;i++){
+ * 
+ * 							sysout("Hello");
+ * 						}
+ * 						System.out.println("Hi");
+ * 
+ * 					6. invlid; value assigned at compile time for final variables so condition becomes false and loop body becomes unreachable
+ * 
+ * 						final int a=10, b=20;
+ * 						for(int i=0;a>b;i++){
+ * 
+ * 							sysout("Hello");
+ * 						}
+ * 						System.out.println("Hi");
+ * 
  * 
  * 				d. for each loop
  * 		
@@ -325,10 +453,10 @@ public class FlowControl {
 		// do---while
 		
 		//Case 1 : Valid
-		do
+		/*do
 			System.out.println("Hello");
 		while(true);
-		
+		*/
 		// Case 2: Invalid
 		/*
 		do
@@ -336,8 +464,19 @@ public class FlowControl {
 		while(true);
 		*/ 
 		
+		//-------------------------------------------------------------------------------------------------------------------
 		
+		// for loop
 		
+		for(int i=0;i<10;i++) {
+			
+		}
+		
+		int i=0;
+		for (System.out.println("Hello");i<10;i++){
+			 
+			 System.out.println("Hi");
+			 						}
 		
 		
 		
