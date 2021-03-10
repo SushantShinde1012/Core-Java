@@ -284,7 +284,68 @@ package com.core;
  * 
  * 
  * 				d. for each loop
+ * 
+ * 					- Also known as enhanced for loop
+ * 
+ * 					- This loop is used to retrieve objects from Arrays and collection
+ * 
+ * 					- It is limited for arrays and collections ; we cannot use it for general purpose
+ * 
+ * 					- Examples
+ * 
+ * 					1. Print Elements of 1D array
+ * 
+ * 						int [] arr ={10,20,30};
+ * 						
+ * 						//With Normal formal
+ * 						for(int i=0;i<arr.length;i++){
+ * 
+ * 							Sysout(arr[i]);
+ * 
+ * 						}
+ * 
+ * 						// for Each loop
+ * 
+ * 						for(int x:arr){
+ * 							Sysout(x);
+ * 						}
  * 		
+ * 					2. Print elements of 2D Array
+ * 
+ * 						int [] [] arr1={{10,20,30},{40,50}}
+ * 						
+ * 						// for loop
+ * 						for(int i=0;i<arr1.length;i++){
+ * 							for(int j=0; j<arr1[i].length;j++){
+ * 								sysout(arr1[i][j]);
+ * 							}
+ * 						}
+ * 
+ * 						// for each
+ * 						for(int [] e:arr1){
+ * 							for(int e1:e){
+ * 
+ * 							sysout(e1);
+ * 							}
+ * 						}
+ * 			
+ * 					3. print elements of 3D Array
+ * 
+ * 						for (int[][] x1 : arr3){
+ * 
+ * 							for(int [] x2 : x1){
+ * 
+ * 								for(int x3 : x2){
+ * 
+ * 									System.out.println(x3);
+ * 								}
+ * 			
+ * 							}
+ * 					
+ * 						}
+ * 
+ * 					
+ * 
  * 		3. Control Transfer statement
  * 			- To transfer the control to one place to another
  *  			a. break
@@ -478,7 +539,23 @@ public class FlowControl {
 			 System.out.println("Hi");
 			 						}
 		
+		//---------------------------------------------------------------------------------------------------------------------------
 		
+		// For Each loop
+		int [] arr ={10,20,30};
+		 					
+		 						//With Normal formal
+		 						for(int j=0;i<arr.length;j++){
+		 
+		 						System.out.println(arr[j]);
+		 
+								}
+		
+								// for Each loop
+		 
+		  						for(int x1:arr){
+		  							System.out.println(x1);
+		  						}
 		
 		
 	}
