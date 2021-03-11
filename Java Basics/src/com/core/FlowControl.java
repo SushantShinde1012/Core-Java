@@ -349,7 +349,72 @@ package com.core;
  * 		3. Control Transfer statement
  * 			- To transfer the control to one place to another
  *  			a. break
+ *  
+ *  				- we use break inside switch, to stop fall through
+ *  					
+ *  					int x=0; 
+ *  					switch(x)
+ *  					{
+ *  						case 0:
+ *  								System.out.println("Hello");
+ *  						case 1:
+ *  								Sysout(1);
+ *  								break
+ *  						case 2:
+ *  								Sysout(2);
+ *  						default:
+ *  								sysout("default");
+ *  					} 
+ *  
+ *  				- In switch all the cases after the matching case will be executed until break occur or end of switch
+ *  
+ *  				- Inside loops we can use break
+ *  				
+ *  					for(int i=0;i<10;i++){
+ *  
+ *  						if(i==5)
+ *  							break;
+ *  
+ *  						System.out.println(i);
+ *  					}
+ *  							
+ *  
+ *  				- Inside label block , very rare it is used
+ *  					
+ *  						class Test {
+ *  
+ *  								public static void main(String [] args){
+ *  		
+ *  									int x=10;
+ *  									l:
+ *  									{
+ *  										Sysout("Begain");
+ *  											if (x==10)
+ *  												break l;
+ *  										Sysout("End");
+ *  									}
+ *  									Sysout("Hello");
+ *  								}
+ *  							}
+ *  					
+ *  				- Above are the only places where we can use break; if we use at any other place we will get compile time error
+ *  						
+ *  					
  *  			b. continue
+ *  
+ *  				- To skip current iteration and continue for next iteration
+ *  
+ *  				- we can use continue only inside loops
+ *  
+ *  				- e.g.
+ *  					for(int i=0; i<10;i++){
+ *  						if(i%2==0
+ *  							continue;
+ *  						Syout(i);
+ *  					}
+ *  
+ *  				- if we are using anywhere else we will get compile time error saying , continue outside of loop
+ *  
  *  			c. return
  *  			d. try catch finally
  *  			e. assert
